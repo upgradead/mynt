@@ -1,0 +1,69 @@
+swagger: "2.0"
+info:
+  description: "Mynt Gcash"
+  version: "1.0.0"
+  title: "Mynt Gcash cost calculator"
+
+basePath: "/"
+tags:
+  - name: "myt"
+    description: "Computation of delivery cost"
+
+schemes:
+  - "https"
+paths:
+  /calculate:
+    get:
+      tags:
+        - "mynt"
+      summary: "Calculate delivery cost"
+      description: ""
+      operationId: "calculate"
+      produces:
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          required: true
+          schema:
+            $ref: "#/definitions/CostRequest"
+      responses:
+        "200":
+          description: "Success"
+          schema:
+            type: string
+        "400":
+          description: "Invalid amount"
+definitions:
+  CostRequest:
+    type: "object"
+    properties:
+      voucher:
+        type: "string"
+      dimention:
+        $ref: "#/definitions/Dimension"
+  Dimension:
+    type: "object"
+    required:
+      - "weight"
+      - "height"
+      - "volume"
+      - "length"
+    properties:
+      weight:
+        type: "number"
+        format: "double"
+      height:
+        type: "number"
+        format: "double"
+        minimum: 1
+      width:
+        type: "number"
+        format: "double"
+        minimum: 1
+      length:
+        type: "number"
+        format: "double"
+        minimum: 1
+
+

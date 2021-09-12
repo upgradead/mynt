@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: CostCalculator
+rates:
+  rate:
+    Reject: -1
+    Heavy: 20
+    Small: .03
+    Medium: .04
+    Large: .05
+
+mynt.feign.url: https://mynt-exam.mocklab.io
+
+

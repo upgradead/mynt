@@ -1,0 +1,261 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Mynt GCASH",
+		"_postman_id": "9cdc07bf-4c8b-c0b3-cbb2-4b6e8d1ec4ec",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Reject_NoVoucher",
+			"request": {
+				"url": "http://localhost:8080/calculate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dimention\": {\r\n    \"height\": 0,\r\n    \"length\": 0,\r\n    \"weight\": 60,\r\n    \"width\": 0\r\n  },\r\n  \"voucher\": \"string\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Reject_GfiVoucher",
+			"request": {
+				"url": "http://localhost:8080/calculate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dimention\": {\r\n    \"height\": 0,\r\n    \"length\": 0,\r\n    \"weight\": 60,\r\n    \"width\": 0\r\n  },\r\n  \"voucher\": \"GFI\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "HeavyParcel_NoVoucher",
+			"request": {
+				"url": "http://localhost:8080/calculate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dimention\": {\r\n    \"height\": 0,\r\n    \"length\": 0,\r\n    \"weight\": 15,\r\n    \"width\": 0\r\n  },\r\n  \"voucher\": \"\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "HeavyParcel_GfiVoucher",
+			"request": {
+				"url": "http://localhost:8080/calculate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dimention\": {\r\n    \"height\": 0,\r\n    \"length\": 0,\r\n    \"weight\": 15,\r\n    \"width\": 0\r\n  },\r\n  \"voucher\": \"GFI\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SmallParcel_NoVoucher",
+			"request": {
+				"url": "http://localhost:8080/calculate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dimention\": {\r\n    \"height\": 1,\r\n    \"length\": 1,\r\n    \"weight\": 10,\r\n    \"width\": 1000\r\n  },\r\n  \"voucher\": \"\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SmallParcel_MyntVoucher",
+			"request": {
+				"url": "http://localhost:8080/calculate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dimention\": {\r\n    \"height\": 1,\r\n    \"length\": 1,\r\n    \"weight\": 10,\r\n    \"width\": 1000\r\n  },\r\n  \"voucher\": \"MYNT\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "MediumParcel_NoVoucher",
+			"request": {
+				"url": "http://localhost:8080/calculate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dimention\": {\r\n    \"height\": 1,\r\n    \"length\": 1,\r\n    \"weight\": 10,\r\n    \"width\": 1500\r\n  },\r\n  \"voucher\": \"\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "MediumParcel_MyntVoucher",
+			"request": {
+				"url": "http://localhost:8080/calculate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dimention\": {\r\n    \"height\": 1,\r\n    \"length\": 1,\r\n    \"weight\": 10,\r\n    \"width\": 1500\r\n  },\r\n  \"voucher\": \"MYNT\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "LargeParcel_NoVoucher",
+			"request": {
+				"url": "http://localhost:8080/calculate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dimention\": {\r\n    \"height\": 1,\r\n    \"length\": 1,\r\n    \"weight\": 10,\r\n    \"width\": 2600\r\n  },\r\n  \"voucher\": \"\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "LargeParcel_InvalidVoucher",
+			"request": {
+				"url": "http://localhost:8080/calculate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dimention\": {\r\n    \"height\": 1,\r\n    \"length\": 1,\r\n    \"weight\": 10,\r\n    \"width\": 2600\r\n  },\r\n  \"voucher\": \"INVALSKLDFDSKLFJSDKLFJ\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
